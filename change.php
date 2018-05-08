@@ -41,5 +41,3 @@ if (!empty($action) && !empty($_GET['id'])) {
     }
 }
 
-
-

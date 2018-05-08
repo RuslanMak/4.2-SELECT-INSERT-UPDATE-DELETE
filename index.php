@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+//http://university.netology.ru/user_data/rmakarov/4.2-SELECT/index.php
+
 include_once 'config.php';
 include_once 'change.php';
 
@@ -44,7 +47,7 @@ $is_done = $sth->fetchAll();
 <h1>Список дел на сегодня</h1>
 <div class="form">
     <form class="form-sort" method="POST" action="add.php" >
-        <input type="text" name="description" placeholder="Описание задачи"   />
+        <input type="text" name="description" placeholder="Описание задачи">
         <input type="submit" name="save" value="Добавить">
     </form>
 
