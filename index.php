@@ -51,8 +51,8 @@ $is_done = $sth->fetchAll();
     <form  class="form-sort" method="POST">
         <label for="sort">Сортировать по:</label>
         <select name="sort_by">
-            <option value="date_add">Дате добавления</option>
-            <option value="status">Статусу</option>
+            <option value="date_added">Дате добавления</option>
+            <option value="is_done">Статусу</option>
             <option value="description">Описанию</option>
         </select>
         <input type="submit" name="sort" value="Отсортировать">

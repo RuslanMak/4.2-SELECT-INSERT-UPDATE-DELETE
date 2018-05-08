@@ -8,4 +8,3 @@ if (!empty($_POST['description'])) {
 	$db->exec("INSERT INTO tasks (description, is_done) VALUES ('".$description."', 'В процессе')");
 }
 
-

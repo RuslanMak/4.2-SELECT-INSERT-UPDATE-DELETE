@@ -23,14 +23,14 @@ if (!empty($action) && !empty($_GET['id'])) {
 	    $sth=$db->prepare("UPDATE tasks SET is_done = 'Выполнено' WHERE id=?");
         $sth->execute([$id]);
 
-        header('Location: index.php', true, 302 );     
+        header('Location: index.php', true, 302 );
     }
 
     if ($action=='delete') {
 	    $sth=$db->prepare("DELETE FROM tasks WHERE id = ?");
         $sth->execute([$id]); 
 
-        header("Location: index.php", true, 302 );     
+        header("Location: index.php", true,302 );
     }
 
     if ($action == 'change') {
@@ -41,18 +41,5 @@ if (!empty($action) && !empty($_GET['id'])) {
     }
 }
 
-
-
-
-
-
-        
-
-
-
-
-              
-        
-   
 
 
